@@ -8,8 +8,8 @@ function rev_epur_str($chaine)
     }
     else
     {   
-
         $return = "";
+        $explode="";
         if(strstr($chaine,"\t")!=false)
         {
             $explode=explode("\t",$chaine);
@@ -29,10 +29,10 @@ function rev_epur_str($chaine)
         $arr=array_reverse($explode);
 
         $return=implode($arr," ");
-        
+        $return=rtrim(ltrim($return));
         return $return;
-}
+    }
 }
 
 
-//echo rev_epur_str("Je m'appelle Ionut");
+//echo rev_epur_str("   .");

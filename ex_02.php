@@ -9,7 +9,7 @@ function cesar2($chaine)
     }
     $dictionary=str_split("abcdefghijklmnopqrstuvwxyz");
     $return="";
-    $bool==false;
+    $bool=false;
     $i=0;
     $len=strlen($chaine);
     $chaine=str_split($chaine);
@@ -50,6 +50,18 @@ while($bool==false)
             if($value==$chaine[$i])
             {
                 $return.=$dictionary[$key+2];
+            }
+            if($value==" ")
+            {
+                $return.=" ";
+            }
+            if($value=="\t")
+            {
+                $return.="\t";
+            }
+            if($value=="\n")
+            {
+                $return.="\n";
             }
         }        
     }

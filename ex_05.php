@@ -35,4 +35,4 @@ function my_sort(&$arr)
 //$arr=array("banane","pomme","kiwi");
 //my_sort($arr);
 
-var_dump($arr);
+//var_dump($arr);
